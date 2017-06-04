@@ -4,7 +4,7 @@ machine:
     version: openjdk8
 test:
   override:
-    -mvn clean package
+    -mvn clean verify
 test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
